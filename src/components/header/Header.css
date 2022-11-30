@@ -1,0 +1,37 @@
+header{
+    background-color: #e83e8c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    
+  }
+
+  .contact-details{
+    margin-left: 5%;
+  }
+
+ 
+
+.mailus{
+    color:rgba(255, 255, 255, 0.6);
+}
+
+.special-letter{
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons{
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.social-icons a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+
+}
