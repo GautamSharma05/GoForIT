@@ -2,6 +2,7 @@ import "./Navbar.css";
 import searchIcon from "../../assets/images/search-icon.png";
 import hambuger from "../../assets/images/hamburger.png";
 import { useState } from "react";
+import {Link} from 'react-router-dom';
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const handleToggle = () => {
@@ -10,9 +11,9 @@ function Navbar() {
   return (
     <nav className="container">
       <div className="logo-section">
-        <a href="#">Go
+        <Link className="nav-link" to="/">Go
         <span>ForIt</span>
-        </a>
+        </Link>
         
         <div className="search-block">
           <input type="text" placeholder="search for rooms or homes..." />
@@ -23,25 +24,25 @@ function Navbar() {
       <img className="hamburger" onClick={handleToggle} src={hambuger} alt="hamburger" />
       <ul className={!showMenu ? "nav-list" : "show"}>
         <li>
-          <a href="#"> Home</a>
+        <Link className="nav-link" to='/'>Home</Link>
         </li>
         <li>
-          <a href="#"> About</a>
+         <Link className="nav-link" to='/about'> About </Link>
         </li>
         <li>
-          <a href="#"> Services</a>
+          <Link className="nav-link" to='/services'> Services</Link>
         </li>
         <li>
-          <a href="#"> Apartment Room</a>
+          <Link className="nav-link" to="/appartment-room"> Apartment Room</Link>
         </li>
         <li>
-          <a href="#"> Blog</a>
+          <Link className="nav-link" to="/blog">Blog</Link>
         </li>
         <li>
-          <a href="#"> Contact</a>
+          <Link className="nav-link" to="/contact"> Contact</Link>
         </li>
         <li>
-          <a href="#"> Login/SignUp</a>
+          <Link className="nav-link" to="/login"> Login/SignUp</Link>
         </li>
       </ul>
     </nav>

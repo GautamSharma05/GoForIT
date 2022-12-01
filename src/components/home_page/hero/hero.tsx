@@ -1,3 +1,4 @@
+
 import BookForm from '../hotelbookcard/book_form';
 import './hero.css';
 function Hero() {

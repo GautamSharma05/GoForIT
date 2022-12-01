@@ -20,12 +20,11 @@ nav .logo-section{
     font-size:1rem;
 }
 
-nav .logo-section a{
+.nav-link{
     text-decoration: none;
     color: #000000;
-    
-
 }
+
 
 nav .logo-section a span{
     color: #fd7792;
@@ -74,7 +73,7 @@ nav ul li:last-child{
     padding-bottom: 0;
 }
 
-nav ul li a{
+nav ul li Link{
     text-decoration: none;
     color: #596172;
     font-size: 1.2rem;
