@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <nav className="container">
       <div className="logo-section">
-        <Link to="/" className="nav-link">
+        <Link to="/" className="nav-link nav-logo">
           Go
           <span>ForIt</span>
         </Link>

@@ -17,6 +17,7 @@ nav .logo-section {
   font-weight: 700;
   white-space: nowrap;
   font-size: 1rem;
+  color: #000000;
 }
 
 .nav-link {
@@ -69,11 +70,7 @@ nav ul li:last-child {
   padding-bottom: 0;
 }
 
-.nav-link {
-  text-decoration: none;
-  color: #596172;
-  font-size: 1.2rem;
-}
+
 
 @media (min-width: 500px) {
   nav .logo-section {
@@ -109,12 +106,19 @@ nav ul li:last-child {
     margin-right: 10%;
   }
 
+ .nav-logo{
+  font-size: 1.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #000000;
+ }
+
   nav input {
     border: none;
     min-width: 690px;
   }
   nav .search-block {
-    margin-right: 8rem;
+   margin-left: 5rem;
     padding: 0.9rem 1rem;
   }
 }

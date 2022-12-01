@@ -1,14 +1,15 @@
+.hotel {
+  margin: 10px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .hotel-booking-card {
-  max-width: 450px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .col,
 .col-md-3,
 .col-md-4,
@@ -22,30 +23,32 @@
 .col-lg-4,
 .col-lg-6,
 .col-lg-8 {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
+  
   padding-left: 15px;
 }
-
-.row h3 {
+h3 {
+  text-align: center;
   margin-bottom: 1rem !important;
   padding-left: 1rem;
   font-family: "Playfair Display";
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5rem;
   font-size: 1.75rem;
 }
 
 .hotelForm {
-  padding: 45px;
+  padding: 6px;
   background: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 15px 34px -29px rgb(0, 0, 0/54);
 }
 
-.row input {
+.grid-row {
+  display: grid;
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.grid-row input {
   padding-left: 1rem;
   border: transparent !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
@@ -56,21 +59,25 @@
   font-size: 14px;
 }
 
-.form-group {
-  margin-bottom: 1rem;
-  
-}
+
 
 input {
   border: none;
-  min-width: 250px;
+  min-width: 260px;
 }
 input:focus {
   outline: none;
 }
 
-.btn {
-  padding: 0.9rem 4rem;
+input:placeholder{
+font-weight: 400;
+color: rgba(0, 0, 0, 0.9);
+}
+
+.booking-btn {
+  padding: 0.9rem 1rem;
+  width: 90%;
+  margin: 2% 6%;
   border-radius: 4px;
   box-shadow: none !important;
   cursor: pointer;
@@ -91,4 +98,45 @@ input:focus {
   border: 1px solid #fd7792;
 }
 
+@media (min-width: 1260px) {
+  .grid-row {
+    grid-template-areas:
+      "f f f f"
+      "c c ch ch"
+      "a a cd cd"
+      "l l p p"
+      "b b b b";
+  }
 
+  #fullname{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #fullNameInput {
+    grid-area: f;
+  }
+  #checkInInput {
+    grid-area: c;
+  }
+  #checkOutInput {
+    grid-area: ch;
+  }
+  #adultAgeInput {
+    grid-area: a;
+  }
+  #childerenAgeInput {
+    grid-area: cd;
+  }
+  #locationInput {
+    grid-area: l;
+  }
+  #phoneNumberInput {
+    grid-area: p;
+  }
+  
+  #bookinBtn {
+    grid-area: b;
+  }
+  
+}

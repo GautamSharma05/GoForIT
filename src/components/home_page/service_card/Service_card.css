@@ -7,9 +7,9 @@
 .card {
   background: white;
   border-radius: 4px;
-  width: 320px;
-  height: 370px;
-  margin: 1.5rem;
+  width: 350px;
+  height: 390px;
+  margin: 0.5rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .card-img {
@@ -62,9 +62,9 @@ p{
 }
 
 
-@media(min-width:746px){
+@media(min-width:1280px){
     .card{
         position: relative;
-        bottom: 84px;
-    }
-}
+        bottom: 64px;
+       }
+  }
