@@ -47,9 +47,9 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link className="nav-link" to="/appartment-room">
+          <Link className="nav-link" to="/hotel-rooms">
             {" "}
-            Apartment Room
+            Hotel Rooms
           </Link>
         </li>
         <li>
