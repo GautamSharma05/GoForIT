@@ -17,7 +17,7 @@ function  AllRestaurantHomePage (props:ChildComponentProps) {
       <div className="restau-container">
         <div className="restau-heading">
           <h2>
-            All<span> {props.items[0].name == 'Hotel Crown Plaza' ?`Hotels`:`Restaurants`}</span>
+            All<span> {props.items[0].name === 'Hotel Crown Plaza' ?`Hotels`:`Restaurants`}</span>
           </h2>
           <Link className="show-more-link" to="">
             Show All(328)
