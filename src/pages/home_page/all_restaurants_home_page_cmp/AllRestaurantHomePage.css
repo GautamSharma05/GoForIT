@@ -1,0 +1,96 @@
+.all-restaurant{
+    margin: 0.5rem; 
+}
+
+.all-restaurant .restau-container .restau-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+} 
+
+.all-restaurant .restau-container .restau-heading h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000000;
+}
+.all-restaurant .restau-container .restau-heading h2 span{
+    color: #e83e8c;
+}
+
+.all-restaurant .restau-container .restau-heading .show-more-link{
+    font-size: 1rem;
+    color: #596172;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.restaurant-list-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:2rem;
+}
+
+section{
+    padding: 2rem 0 ;
+}
+
+.restaurant-meta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.restaurant-meta span{
+    color: #596172;
+    font-size: 0.8rem;
+    padding-top: 0.4rem;
+}
+.restaurant-card{
+    max-width:320px;
+    min-height: 180px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+
+
+.restaurant-card img{
+    width: 100%;
+}
+
+.restaurant-title{
+    margin-top: 1rem;
+}
+.restaurant-title .title-link{
+    text-decoration: none;
+    color: #28313D;
+    line-height: 1.2;
+}
+
+
+
+@media (min-width:950px){
+    .restaurant-list-wrapper{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .restaurant-card{
+        padding: 0.5rem;
+        min-height:280px;
+    }
+}
+
+@media (min-width:1192px){
+    .restaurant-list-wrapper{
+        grid-template-columns: repeat(5,1fr);
+    }
+    .all-restaurant .restau-container .restau-heading h2{
+        font-size: 1.8rem;
+    }
+    .restaurant-title{
+        font-size: 1.2rem;
+    }
+    .restaurant-card{
+        padding: 0.5rem;
+        min-height:280px;
+    }
+}
+

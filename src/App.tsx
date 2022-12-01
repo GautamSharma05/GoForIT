@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "./components/header/Header";
 import Navbar from "./components/navbar/Navbar";
 import {
@@ -6,20 +5,26 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import About from "./components/about/About";
-import Blog from "./components/blog/Blog";
-import Contact from "./components/contact/Contact";
-import Home from "./components/home_page/Home";
+import About from "./pages/about/About";
+import Blog from "./pages/blog/Blog";
+import Contact from "./pages/contact/Contact";
+import Home from "./pages/home_page/Home";
+import Service from "./pages/service_page/Service";
+import AllHotel from "./pages/hotel_rooms/AllHotel";
+import Login from "./pages/login/Login";
 function App() {
   return (
     <Router>
       <Header />
       <Navbar />
       <Routes>
-        <Route path="/GoForIT" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Service />} />
+        <Route path="/hotel-rooms" element={<AllHotel />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       
     </Router>

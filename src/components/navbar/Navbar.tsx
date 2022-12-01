@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <nav className="container">
       <div className="logo-section">
-        <Link to="/GoForIT" className="nav-link nav-logo">
+        <Link to="/" className="nav-link nav-logo">
           Go
           <span>ForIt</span>
         </Link>
@@ -47,9 +47,9 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <Link className="nav-link" to="/appartment-room">
+          <Link className="nav-link" to="/hotel-rooms">
             {" "}
-            Apartment Room
+            Hotel Rooms
           </Link>
         </li>
         <li>
