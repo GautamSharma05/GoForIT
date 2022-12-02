@@ -19,7 +19,7 @@ function App() {
       <Header />
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/GoForIT" element={<Home/>} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Service />} />
         <Route path="/hotel-rooms" element={<AllHotel />} />

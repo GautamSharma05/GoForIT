@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <nav className="container">
       <div className="logo-section">
-        <Link to="/" className="nav-link nav-logo">
+        <Link to="/GoForIT" className="nav-link nav-logo">
           Go
           <span>ForIt</span>
         </Link>
@@ -30,7 +30,7 @@ function Navbar() {
       />
       <ul className={!showMenu ? "nav-list" : "show"}>
         <li>
-          <Link className="nav-link" to="/">
+          <Link className="nav-link" to="/GoForIT">
             Home
           </Link>
         </li>
