@@ -19,14 +19,14 @@ function  AllRestaurantHomePage (props:ChildComponentProps) {
           <h2>
             All<span> {props.items[0].name === 'Hotel Crown Plaza' ?`Hotels`:`Restaurants`}</span>
           </h2>
-          <Link className="show-more-link" to="">
+          <Link className="show-more-link" to={props.items[0].name === 'Hotel Crown Plaza' ? '/hotel-rooms':'#'}>
             Show All(328)
           </Link>
         </div>
         <div className="restaurant-list-wrapper">
-          {props.items.map((restaurant) => {
+          {props.items.map((restaurant,index) => {
             return (
-              <div className="restaurant-card">
+              <div key={index} className="restaurant-card">
                 <img src={restaurant.imageUrl} alt="food" />
                 <div className="restaurant-meta">
                   <span>Rs. {restaurant.priceFOrOne} for one</span>

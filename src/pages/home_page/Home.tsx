@@ -20,7 +20,7 @@ function Home() {
         {matches ? <BookForm/> : null}
         <ServiceCard/>
         <AllRestaurantHomePage items={restaurantsList}/>
-        <AllRestaurantHomePage items={hotelsList}/>
+        <AllRestaurantHomePage items={hotelsList} />
     </div>
   )
 }

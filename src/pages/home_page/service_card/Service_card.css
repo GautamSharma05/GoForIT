@@ -46,6 +46,7 @@ p{
 .btn {
   padding: 0.9rem 1rem;
   margin-left: 30%;
+  margin-right: 30%;
   border-radius: 4px;
   box-shadow: none !important;
   cursor: pointer;
