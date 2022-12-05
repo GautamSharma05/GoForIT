@@ -23,14 +23,13 @@
 .col-lg-4,
 .col-lg-6,
 .col-lg-8 {
-  
   padding-left: 15px;
 }
 .hotelForm h3 {
   text-align: center;
   margin-bottom: 1rem !important;
   padding-left: 1rem;
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   color: rgba(0, 0, 0, 0.8);
   font-weight: 500;
   line-height: 1.5rem;
@@ -59,19 +58,17 @@
   font-size: 14px;
 }
 
-
-
-input {
+.grid-row input {
   border: none;
   min-width: 260px;
 }
-input:focus {
+.grid-row input:focus {
   outline: none;
 }
 
-input:placeholder{
-font-weight: 400;
-color: rgba(0, 0, 0, 0.9);
+.grid-row input:placeholder {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .booking-btn {
@@ -92,23 +89,18 @@ color: rgba(0, 0, 0, 0.9);
   background-color: #fd7792;
   border: 1px solid #fd7792;
 }
-.btn-pink:hover {
-  color: white;
-  background: transparent;
-  border: 1px solid #fd7792;
-}
 
 @media (min-width: 1260px) {
   .grid-row {
     grid-template-areas:
-      "f f f f"
-      "c c ch ch"
-      "a a cd cd"
-      "l l p p"
-      "b b b b";
+      'f f f f'
+      'c c ch ch'
+      'a a cd cd'
+      'l l p p'
+      'b b b b';
   }
 
-  #fullname{
+  #fullname {
     width: 90%;
     margin: 0 auto;
   }
@@ -134,9 +126,8 @@ color: rgba(0, 0, 0, 0.9);
   #phoneNumberInput {
     grid-area: p;
   }
-  
+
   #bookinBtn {
     grid-area: b;
   }
-  
 }

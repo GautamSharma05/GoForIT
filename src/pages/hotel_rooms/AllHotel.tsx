@@ -1,6 +1,6 @@
-import "./AllHotel.css";
-import HotelCard from "./hotel-cards/HotelCard";
-import { allHotelsList } from "../../constants/StaticData";
+import { allHotelsList } from '../../constants/StaticData';
+import './AllHotel.css';
+import HotelCard from './hotel-cards/HotelCard';
 
 function AllHotel() {
   return (
@@ -13,12 +13,14 @@ function AllHotel() {
         </p>
       </div>
       <div className="hotel-found-div">
-        <span className="heading-found">1000 GFIs Founds</span>
+        <span className="heading-found">
+          {allHotelsList.length} GFIs Founds
+        </span>
         <span className="price-found-per-night">Price per room per night</span>
       </div>
 
       <div className="list-wrapper-hotels">
-        {allHotelsList.map((hotel) => {
+        {allHotelsList.map(hotel => {
           return <HotelCard items={hotel} key={hotel.id} />;
         })}
       </div>
