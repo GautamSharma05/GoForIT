@@ -9,7 +9,9 @@ function ServiceCard() {
           Even the all-powerful Pointing has no control about the blind texts it
           is an almost unorthographic.
         </p>
-        <button className="btn btn-pinks">Read More</button>
+        <button aria-label="Read More" className="btn btn-pinks">
+          Read More
+        </button>
       </div>
       <div className="card">
         <div className="card-img img-2"></div>
@@ -18,7 +20,9 @@ function ServiceCard() {
           Even the all-powerful Pointing has no control about the blind texts it
           is an almost unorthographic.
         </p>
-        <button className="btn btn-pinks">Read More</button>
+        <button aria-label="Read More" className="btn btn-pinks">
+          Read More
+        </button>
       </div>
       <div className="card">
         <div className="card-img img-3"></div>
@@ -27,7 +31,9 @@ function ServiceCard() {
           Even the all-powerful Pointing has no control about the blind texts it
           is an almost unorthographic.
         </p>
-        <button className="btn btn-pinks">Read More</button>
+        <button aria-label="Read More" className="btn btn-pinks">
+          Read More
+        </button>
       </div>
     </section>
   );

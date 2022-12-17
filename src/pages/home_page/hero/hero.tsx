@@ -1,4 +1,3 @@
-
 import BookForm from '../hotelbookcard/book_form';
 import './hero.css';
 function Hero() {
@@ -9,15 +8,18 @@ function Hero() {
           <div className="house-emoji">🏘️</div>
           <h1>Book unique home and experiences all over the INDIA.</h1>
           <div className="hero-btn-block">
-            <button className="btn btn-pink">All Properties</button>
-            <button className="btn btn-white">Restaurants</button>
+            <button aria-label="all properties" className="btn btn-pink">
+              All Properties
+            </button>
+            <button aria-label="restaurants" className="btn btn-white">
+              Restaurants
+            </button>
           </div>
         </div>
         <div className="hero_book_form_block">
-          <BookForm/>
+          <BookForm />
         </div>
       </div>
-      
     </main>
   );
 }
