@@ -30,7 +30,7 @@ export default function Otp() {
           </div>
         </div>
         <div className="login-button">
-          <button type="submit" disabled>
+          <button aria-label="Continue" type="submit" disabled>
             Continue
           </button>
         </div>

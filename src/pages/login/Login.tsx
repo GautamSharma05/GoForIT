@@ -22,7 +22,7 @@ function Login() {
           </div>
         </div>
         <div className="login-button">
-          <button type="submit" disabled>
+          <button aria-label="Continue" type="submit" disabled>
             Continue
           </button>
         </div>
