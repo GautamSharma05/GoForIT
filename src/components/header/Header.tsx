@@ -1,32 +1,40 @@
-import "./Header.css";
-import { Link } from "react-router-dom";
-import { faFacebook, faInstagram, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './Header.css';
 function Header() {
   return (
     <header>
       <div className="contact-details">
         <p className="mailus">
           <span>Phone No: </span>
-          <a href="tel:+918854082108" className="special-letter">+918854082108</a>
-            &nbsp;or&nbsp;
+          <a href="tel:+918854082108" className="special-letter">
+            +918854082108
+          </a>
+          &nbsp;or&nbsp;
           <span>email us: </span>
-          <a className="special-letter" href="mailto: help-desk@goforit.com">help-desk@goforit.com</a>
+          <a className="special-letter" href="mailto: help-desk@goforit.com">
+            help-desk@goforit.com
+          </a>
         </p>
       </div>
       <div className="social-icons">
-        <Link to="https://www.facebook.com/">
-        <FontAwesomeIcon icon={faFacebook} />
-        </Link>
-        <Link to="https://twitter.com/i/flow/login">
-        <FontAwesomeIcon icon={faTwitter} />
-        </Link>
-        <Link to="https://www.instagram.com/">
-        <FontAwesomeIcon icon={faInstagram} />
-        </Link>
-        <Link to="https://www.youtube.com/">
-        <FontAwesomeIcon icon={faYoutube} />
-        </Link>
+        <a target="_blank" href="https://www.facebook.com/">
+          <FontAwesomeIcon icon={faFacebook} />
+        </a>
+        <a target="_blank" href="https://twitter.com/i/flow/login">
+          <FontAwesomeIcon icon={faTwitter} />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/">
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
+        <a target="_blank" href="https://www.youtube.com/">
+          <FontAwesomeIcon icon={faYoutube} />
+        </a>
       </div>
     </header>
   );
