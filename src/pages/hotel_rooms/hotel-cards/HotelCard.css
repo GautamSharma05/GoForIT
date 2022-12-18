@@ -1,81 +1,205 @@
-
-
-.card{
-    border: 1px solid #E5E5E5;
-    box-sizing: border-box;
-    border-radius: 8px;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+.card {
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-.card-image{
-   
+.card-image {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.card-image img {
+  width: 180%;
+  padding: 0.2rem;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card-image .desktop-multiple-images .card-image-2 img {
+  position: relative;
+  left: 6.5rem;
+  width: 40%;
+  height: 40%;
+}
+
+.hotel-card-title h3 {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 24px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: start;
+  padding: 0 0.4rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.hotel-card-subtitle {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+
+  padding: 0 0.4rem;
+}
+
+.price-details {
+  margin: 1rem 0;
+  padding: 0 0.4rem;
+}
+
+.price-details .discount-price {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.price-details .main-price {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  margin-right: 8px;
+}
+
+.discount-percent {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #ff5a5f;
+}
+
+.button-card-desktop .button-card-view-details {
+  background-color: #fff;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  color: #222;
+  border-radius: 2px !important;
+  border: 1px solid #222;
+}
+
+.button-card-desktop .button-card-book-now {
+  color: white;
+  padding: 0.7rem 1rem;
+  margin-left: 16px;
+  box-shadow: none !important;
+  cursor: pointer;
+  border-radius: 2px !important;
+  background-color: #fd7792;
+  border: 1px solid #fd7792;
+}
+
+.hotel-card-rating {
+  display: flex;
+  align-items: center;
+  margin: 0.8rem 0.2rem;
+}
+
+.hotel-card-rating .hotel-card-rating-stars {
+  background-color: #ff5a5f;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 2px;
+  margin-right: 9px;
+}
+
+.hotel-card-rating span {
+  color: #222;
+  font-size: 12px;
+}
+
+.amenityWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.amenityWrapper .amenityWrapper__amenity {
+  font-size: 12px;
+  color: #222;
+  margin-right: 8px;
+}
+
+.amenityWrapper .amenityWrapper__amenity span {
+  margin-right: 8px;
+}
+
+@media (min-width: 375px) {
+  .card-image .desktop-multiple-images .card-image-2 img {
+    position: relative;
+    left: 7.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  .card-image {
+    width: 47%;
+  }
+
+  .card-image img {
+    width: 380px;
+    padding: 0.5rem;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .card-image .desktop-multiple-images .card-image-2 img {
+    position: relative;
+    left: 0;
+    width: 85px;
+    height: 20%;
+  }
+
+  .desktop-card {
+    display: flex;
+  }
+
+  .desktop-card-design {
+    display: block;
+    width: 50%;
+    text-align: start;
+  }
+
+  .desktop-card-design .hotel-card-title h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #222;
+  }
+
+  .desktop-card-design .hotel-card-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #222;
+  }
+
+  .desktop-price-button-design {
     display: flex;
     align-items: center;
-   
-}
+    justify-content: space-between;
+  }
 
-.card-image  img{
-    width: 100%;
-    height: 100%;
-    padding: 0.2rem;
-    object-fit: cover;
-    border-radius: 4px; 
-}
-
-.hotel-card-title h3{
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.8);;
-    line-height: 24px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    text-align: start;
-    padding: 0 0.4rem;
-    font-weight: 500;
-    margin: 0;
-}
-.hotel-card-subtitle{
-    color: rgba(0, 0, 0, 0.5);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.2px;
-    
-    padding: 0 0.4rem;
-}
-.price-details{
-    
-    margin: 1rem 0;
-    padding: 0 0.4rem;
-}
-.price-details .discount-price{
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: bold;
+  .price-details .discount-price {
+    font-size: 24px;
+    color: #fd7792;
+    font-weight: 700;
     margin-right: 8px;
+  }
 }
-
-.price-details .main-price{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.2px;
-    margin-right: 8px;
-}
-
-
-.discount-percent{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.2px;
-    color: #FF5A5F;
-}
-
-
-
-  

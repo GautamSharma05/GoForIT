@@ -1,5 +1,5 @@
-.container {
-  max-width: 90%;
+.nav-container {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -26,7 +26,7 @@ nav .logo-section {
 }
 
 nav .logo-section .nav-link span {
-  color: #FF5A5F;
+  color: #ff5a5f;
 }
 
 nav .search-block {
@@ -70,8 +70,6 @@ nav ul li:last-child {
   padding-bottom: 0;
 }
 
-
-
 @media (min-width: 500px) {
   nav .logo-section {
     font-size: 1.5rem;
@@ -98,27 +96,37 @@ nav ul li:last-child {
   }
   nav {
     flex-wrap: nowrap;
+    padding: 1rem 1.5rem;
+  }
+  .nav-logo {
+    font-size: 1rem;
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1200px) {
+  .nav-container {
+    min-width: 100%;
+  }
+  nav {
+    padding: 1rem 1.5rem;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
   .hero_book_form_block {
     margin-right: 10%;
   }
 
- .nav-logo{
-  font-size: 1.5rem;
-  font-weight: 700;
-  white-space: nowrap;
-  color: #000000;
- }
+  .nav-logo {
+    font-size: 1.2rem;
+  }
 
   nav input {
     border: none;
     min-width: 690px;
   }
   nav .search-block {
-   margin-left: 5rem;
+    margin-left: 5rem;
     padding: 0.9rem 1rem;
   }
 }

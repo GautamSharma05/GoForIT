@@ -1,4 +1,4 @@
-.all-hotels {
+.all-hotels-section {
   padding: 0;
 }
 
@@ -41,9 +41,9 @@
   color: #ff5a5f;
 }
 
-@media (min-width: 730px) {
-  .list-wrapper-hotels {
-    /* flex: 0 0 50%; */
+@media (max-width: 900px) {
+  .filter-div {
+    display: none;
   }
 }
 
@@ -51,14 +51,49 @@
   .list-wrapper-hotels {
     margin-top: 2rem;
   }
+
   .hotel-found-div {
     margin-top: 1rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .all-hotels-div {
+    display: flex;
+  }
+  .desktop-div-hotels-card {
+    display: block;
+    width: 70%;
+  }
+  .all-hotels-div .divider {
+    border-left: 2px solid rgb(221, 220, 220);
+  }
+  .filter-div {
+    width: 20%;
+    border-right: #000000;
+    padding: 1rem;
+  }
+  .filter-heading-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .filter-heading-div .filter-heading {
+    font-weight: 700;
+    font-size: 26px;
+  }
+  .filter-heading-div .clear-all-button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ff5a5f;
   }
 }
 
 @media (min-width: 1200px) {
   .list-wrapper-hotels {
     margin-top: 6rem;
+    display: block;
   }
   .covid-info p {
     text-align: center;

@@ -21,15 +21,22 @@ function BookForm() {
             <div id="adultAgeInput" className="col-md-6">
               <input type="text" placeholder="Adult" />
               <select name="adult" id="adult">
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-                <option value="5"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
             </div>
             <div id="childerenAgeInput" className="col-md-6">
               <input type="text" placeholder="Children" />
+              <select name="adult" id="adult">
+                <option value="1">0</option>
+                <option value="2">1</option>
+                <option value="3">2</option>
+                <option value="4">3</option>
+                <option value="5">4</option>
+              </select>
             </div>
             <div id="locationInput" className="col-md-6">
               <input type="text" placeholder="Location" />
