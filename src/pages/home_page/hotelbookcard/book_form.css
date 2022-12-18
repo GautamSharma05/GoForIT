@@ -102,6 +102,27 @@
   border: 1px solid #fd7792;
 }
 
+#adultAgeInput {
+  display: flex;
+}
+
+#childerenAgeInput {
+  display: flex;
+}
+
+select {
+  position: relative;
+  right: 50px;
+  border: none;
+}
+select:focus {
+  outline: none;
+  width: auto;
+}
+select option {
+  background-color: #fff;
+}
+
 @media (min-width: 1260px) {
   .grid-row {
     grid-template-areas:
@@ -129,6 +150,7 @@
   #adultAgeInput {
     grid-area: a;
   }
+
   #childerenAgeInput {
     grid-area: cd;
   }

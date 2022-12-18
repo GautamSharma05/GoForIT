@@ -1,15 +1,15 @@
-import "./Navbar.css";
-import searchIcon from "../../assets/images/search-icon.png";
-import hambuger from "../../assets/images/hamburger.png";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import hambuger from '../../assets/images/hamburger.png';
+import searchIcon from '../../assets/images/search-icon.png';
+import './Navbar.css';
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
   const handleToggle = () => {
     setShowMenu(!showMenu);
   };
   return (
-    <nav className="container">
+    <nav className="nav-container">
       <div className="logo-section">
         <Link to="/GoForIT" className="nav-link nav-logo">
           Go
@@ -28,7 +28,7 @@ function Navbar() {
         src={hambuger}
         alt="hamburger"
       />
-      <ul className={!showMenu ? "nav-list" : "show"}>
+      <ul className={!showMenu ? 'nav-list' : 'show'}>
         <li>
           <Link className="nav-link" to="/GoForIT">
             Home
@@ -36,19 +36,19 @@ function Navbar() {
         </li>
         <li>
           <Link className="nav-link" to="/about">
-            {" "}
-            About{" "}
+            {' '}
+            About{' '}
           </Link>
         </li>
         <li>
           <Link className="nav-link" to="/services">
-            {" "}
+            {' '}
             Services
           </Link>
         </li>
         <li>
           <Link className="nav-link" to="/hotel-rooms">
-            {" "}
+            {' '}
             Hotel Rooms
           </Link>
         </li>
@@ -59,13 +59,13 @@ function Navbar() {
         </li>
         <li>
           <Link className="nav-link" to="/contact">
-            {" "}
+            {' '}
             Contact
           </Link>
         </li>
         <li>
           <Link className="nav-link" to="/login">
-            {" "}
+            {' '}
             Login/SignUp
           </Link>
         </li>
