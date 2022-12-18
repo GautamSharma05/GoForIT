@@ -62,6 +62,7 @@
   line-height: 24px;
   font-weight: bold;
   margin-right: 8px;
+  color: #fd7792;
 }
 
 .price-details .main-price {
@@ -135,10 +136,32 @@
   margin-right: 8px;
 }
 
+/* media Queries Started From here */
+
 @media (min-width: 375px) {
   .card-image .desktop-multiple-images .card-image-2 img {
     position: relative;
-    left: 7.5rem;
+    left: 8rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .card-image .desktop-multiple-images .card-image-2 img {
+    position: relative;
+    left: 9rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .card {
+    width: 45%;
+    max-height: 500px;
+    flex-wrap: wrap;
+  }
+
+  .card-image .desktop-multiple-images .card-image-2 img {
+    position: relative;
+    left: 8rem;
   }
 }
 

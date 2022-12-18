@@ -7,7 +7,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
   flex-wrap: wrap;
 }
 
@@ -72,7 +72,21 @@ nav ul li:last-child {
 
 @media (min-width: 500px) {
   nav .logo-section {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  nav input {
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 700px) {
+  nav .search-block {
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    padding: 0.9rem 1rem;
+  }
+  nav input {
+    min-width: 500px;
   }
 }
 
