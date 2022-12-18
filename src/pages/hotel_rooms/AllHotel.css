@@ -1,68 +1,70 @@
-.all-hotels{
-    padding: 0;
+.all-hotels {
+  padding: 0;
 }
 
-.list-wrapper-hotels{
-    display: flex;
-    flex-wrap: wrap;
-    Justify-content: center;
+.list-wrapper-hotels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.covid-info{
-    background: #e83e8c;
-    color: #fff;
-    padding: 0.5rem;
+.covid-info {
+  background: #e83e8c;
+  color: #fff;
+  padding: 0.5rem;
 }
-.covid-info p{
-    text-align:justify;
-    font-size: 12px;
+.covid-info svg {
+  color: #fff;
+}
+.covid-info p {
+  text-align: justify;
+  font-size: 12px;
 }
 .hotel-found-div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 1rem;
-    margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin: 0.5rem;
 }
 
-.heading-found{
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 24px;
+.heading-found {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 }
 
-.price-found-per-night{
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    color: #FF5A5F;
+.price-found-per-night {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ff5a5f;
 }
 
-@media (min-width:730px){
-    .list-wrapper-hotels{
-       /* flex: 0 0 50%; */
-    }
-}
-
-@media (min-width:910px){
-    .list-wrapper-hotels{
-        margin-top: 2rem;
-       
-    }
-  .hotel-found-div{
-        margin-top: 1rem;
+@media (min-width: 730px) {
+  .list-wrapper-hotels {
+    /* flex: 0 0 50%; */
   }
-   
 }
-   
-@media (min-width:1200px){
-    .list-wrapper-hotels{
-        margin-top: 6rem;
-       
-    }
-    
-    .hotel-found-div{
-        margin: 2rem;
 
+@media (min-width: 910px) {
+  .list-wrapper-hotels {
+    margin-top: 2rem;
+  }
+  .hotel-found-div {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list-wrapper-hotels {
+    margin-top: 6rem;
+  }
+  .covid-info p {
+    text-align: center;
+  }
+
+  .hotel-found-div {
+    margin: 2rem;
   }
 }

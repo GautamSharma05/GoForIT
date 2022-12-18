@@ -65,6 +65,18 @@
 .grid-row input:focus {
   outline: none;
 }
+.grid-row input[type='date']::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
 
 .grid-row input:placeholder {
   font-weight: 400;
