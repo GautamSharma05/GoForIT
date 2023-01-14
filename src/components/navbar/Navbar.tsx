@@ -9,17 +9,16 @@ function Navbar() {
     setShowMenu(!showMenu);
   };
   return (
-    <nav className="nav-container">
+    <nav>
       <div className="logo-section">
         <Link to="/GoForIT" className="nav-link nav-logo">
           Go
           <span>ForIt</span>
         </Link>
-
-        <div className="search-block">
-          <input type="text" placeholder="search for rooms or homes..." />
-          <img src={searchIcon} alt="search-icon" />
-        </div>
+      </div>
+      <div className="search-block">
+        <input type="text" placeholder="search for rooms or homes..." />
+        <img src={searchIcon} alt="search-icon" />
       </div>
 
       <img
@@ -28,6 +27,7 @@ function Navbar() {
         src={hambuger}
         alt="hamburger"
       />
+
       <ul className={!showMenu ? 'nav-list' : 'show'}>
         <li>
           <Link className="nav-link" to="/GoForIT">
@@ -36,20 +36,17 @@ function Navbar() {
         </li>
         <li>
           <Link className="nav-link" to="/about">
-            {' '}
-            About{' '}
+            About
           </Link>
         </li>
         <li>
           <Link className="nav-link" to="/services">
-            {' '}
             Services
           </Link>
         </li>
         <li>
           <Link className="nav-link" to="/hotel-rooms">
-            {' '}
-            Hotel Rooms
+            Rooms
           </Link>
         </li>
         <li>
@@ -59,13 +56,11 @@ function Navbar() {
         </li>
         <li>
           <Link className="nav-link" to="/contact">
-            {' '}
             Contact
           </Link>
         </li>
         <li>
           <Link className="nav-link" to="/login">
-            {' '}
             Login/SignUp
           </Link>
         </li>
