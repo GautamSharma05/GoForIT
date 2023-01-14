@@ -142,7 +142,7 @@ nav ul li:last-child {
 
   nav input {
     border: none;
-    min-width: 8rem;
+    min-width: 35rem;
   }
   nav .search-block {
     padding: 0.9rem 1rem;
