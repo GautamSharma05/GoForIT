@@ -20,6 +20,7 @@ function AllHotel() {
           </div>
         </div>
         <div className="divider"></div>
+
         <div className="desktop-div-hotels-card">
           <div className="hotel-found-div">
             <span className="heading-found">

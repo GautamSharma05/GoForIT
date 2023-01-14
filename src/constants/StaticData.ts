@@ -115,7 +115,7 @@ export const allHotelsList = [
   },
   {
     id: 2,
-    name: 'GFI Townhouse OTH BUDHI 79651 GFI House',
+    name: 'GFI Townhouse OTH BUDHI 79651',
     discountPrice: '650',
     mainPrice: '1500',
     rating: 4.8,
@@ -123,8 +123,7 @@ export const allHotelsList = [
       'https://thumbs.dreamstime.com/b/hotel-room-beautiful-orange-sofa-included-43642330.jpg',
       'https://thumbs.dreamstime.com/b/hotel-room-beautiful-orange-sofa-included-43642330.jpg',
     ],
-    address:
-      'NAR Comforts,13, G.K temple street, opp. Vijayalaxmi theater, Chickpet, Bangalore',
+    address: 'opp. Vijayalaxmi theater, Chickpet, Bangalore',
   },
   {
     id: 3,
@@ -173,6 +172,6 @@ export const allHotelsList = [
       'https://thumbs.dreamstime.com/b/hotel-room-beautiful-orange-sofa-included-43642330.jpg',
     ],
     address:
-      'Arghar Dasrahalli Near Madhu Hospital Opp Maharaja Tent House Reliance Smart Building Magadi Main Road, Bangalore',
+      'Opp Maharaja Tent House Reliance Smart Building Magadi Main Road, Bangalore',
   },
 ];

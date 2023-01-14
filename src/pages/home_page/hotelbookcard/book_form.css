@@ -1,33 +1,17 @@
 .hotel {
-  margin: 10px;
-  border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.hotel-booking-card {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1rem;
 }
 
-.col,
-.col-md-3,
-.col-md-4,
-.col-md-5,
-.col-md-6,
-.col-md-7,
-.col-md-8,
-.col-md-9,
-.col-md-12,
-.col-lg-3,
-.col-lg-4,
-.col-lg-6,
-.col-lg-8 {
-  padding-left: 15px;
+.hotelForm {
+  padding: 1.5rem;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .hotelForm h3 {
   text-align: center;
-  margin-bottom: 1rem !important;
+  margin-bottom: 2rem;
   padding-left: 1rem;
   font-family: 'Playfair Display';
   color: rgba(0, 0, 0, 0.8);
@@ -36,36 +20,32 @@
   font-size: 1.75rem;
 }
 
-.hotelForm {
-  padding: 6px;
-  background: #fff;
-}
-
 .grid-row {
   display: grid;
   grid-gap: 20px;
-  justify-content: center;
 }
 
-.grid-row input {
-  padding-left: 1rem;
-  border: transparent !important;
+.form-input {
+  padding-left: 1.5rem;
+  border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
   height: 50px !important;
   background: rgba(0, 0, 0, 0.05) !important;
   color: rgba(0, 0, 0, 0.9);
   border-radius: 4px;
   font-size: 14px;
+
+  width: 100%;
 }
 
-.grid-row input {
-  border: none;
-  min-width: 260px;
-}
-.grid-row input:focus {
+.form-input:focus {
   outline: none;
 }
-.grid-row input[type='date']::-webkit-calendar-picker-indicator {
+.form-input::placeholder {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.form-input[type='date']::-webkit-calendar-picker-indicator {
   background: transparent;
   bottom: 0;
   color: transparent;
@@ -78,22 +58,15 @@
   width: auto;
 }
 
-.grid-row input:placeholder {
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.9);
-}
-
 .booking-btn {
   padding: 0.9rem 1rem;
-  width: 90%;
-  margin: 2% 6%;
+  width: 100%;
   border-radius: 4px;
   box-shadow: none !important;
   cursor: pointer;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 11px;
-  display: inline-block;
 }
 
 .btn-pink {
@@ -102,66 +75,24 @@
   border: 1px solid #fd7792;
 }
 
-#adultAgeInput {
-  display: flex;
-}
-
-#childerenAgeInput {
-  display: flex;
-}
-
-select {
-  position: relative;
-  right: 50px;
-  border: none;
-}
 select:focus {
   outline: none;
   width: auto;
 }
-select option {
-  background-color: #fff;
+select {
+  padding-right: 1.5rem;
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 700px) {
   .grid-row {
-    grid-template-areas:
-      'f f f f'
-      'c c ch ch'
-      'a a cd cd'
-      'l l p p'
-      'b b b b';
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
-
-  #fullname {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  #fullNameInput {
-    grid-area: f;
-  }
-  #checkInInput {
-    grid-area: c;
-  }
-  #checkOutInput {
-    grid-area: ch;
-  }
-  #adultAgeInput {
-    grid-area: a;
-  }
-
-  #childerenAgeInput {
-    grid-area: cd;
-  }
-  #locationInput {
-    grid-area: l;
-  }
-  #phoneNumberInput {
-    grid-area: p;
+  .fullNameInput {
+    grid-column: 1 / span 2;
   }
 
   #bookinBtn {
-    grid-area: b;
+    grid-column: 1 / span 2;
   }
 }

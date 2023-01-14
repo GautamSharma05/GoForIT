@@ -1,27 +1,16 @@
-.nav-container {
-  width: 100%;
-  margin: 0 auto;
-}
-
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
 }
 
 nav .logo-section {
-  display: flex;
-  align-items: center;
   font-weight: 700;
   white-space: nowrap;
   font-size: 1rem;
-  color: #000000;
-}
-
-.nav-link {
-  text-decoration: none;
   color: #000000;
 }
 
@@ -29,19 +18,23 @@ nav .logo-section .nav-link span {
   color: #ff5a5f;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: #000000;
+}
+
 nav .search-block {
-  margin-left: 0.8rem;
-  margin-right: 0.5rem;
   padding: 0.5rem 0.8rem;
   border: 1px solid #d9dde7;
   display: flex;
+
   align-items: center;
   border-radius: 4px;
 }
 
 nav input {
   border: none;
-  min-width: 190px;
+  min-width: 8rem;
 }
 
 nav input:focus {
@@ -109,24 +102,29 @@ nav ul li:last-child {
     margin-left: 1.8rem;
   }
   nav {
-    flex-wrap: nowrap;
     padding: 1rem 1.5rem;
   }
   .nav-logo {
     font-size: 1rem;
   }
+  nav input {
+    min-width: 8rem;
+  }
+  nav .search-block {
+    flex-basis: 8rem;
+  }
 }
 
 @media (min-width: 1200px) {
-  .nav-container {
-    min-width: 100%;
+  nav input {
+    min-width: 30rem;
   }
-  nav {
-    padding: 1rem 1.5rem;
+  nav .search-block {
+    flex-basis: 30rem;
   }
-  .nav-link {
-    font-size: 14px;
-  }
+}
+
+@media (min-width: 1300px) {
   .hero_book_form_block {
     margin-right: 10%;
   }
@@ -137,10 +135,11 @@ nav ul li:last-child {
 
   nav input {
     border: none;
-    min-width: 690px;
+    min-width: 35rem;
   }
   nav .search-block {
-    margin-left: 5rem;
     padding: 0.9rem 1rem;
+    margin-left: 5rem;
+    flex-basis: 35rem;
   }
 }
