@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/GoForIT/static/css/main.3132741b.css",
+    "main.css": "/GoForIT/static/css/main.e7909ac5.css",
     "main.js": "/GoForIT/static/js/main.996d9392.js",
     "static/js/787.603a9c7d.chunk.js": "/GoForIT/static/js/787.603a9c7d.chunk.js",
     "static/media/mobile-img.png": "/GoForIT/static/media/mobile-img.8624e62978c498bfa69d.png",
     "service-worker.js": "/GoForIT/service-worker.js",
     "index.html": "/GoForIT/index.html",
-    "main.3132741b.css.map": "/GoForIT/static/css/main.3132741b.css.map",
+    "main.e7909ac5.css.map": "/GoForIT/static/css/main.e7909ac5.css.map",
     "main.996d9392.js.map": "/GoForIT/static/js/main.996d9392.js.map",
     "787.603a9c7d.chunk.js.map": "/GoForIT/static/js/787.603a9c7d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3132741b.css",
+    "static/css/main.e7909ac5.css",
     "static/js/main.996d9392.js"
   ]
 }
