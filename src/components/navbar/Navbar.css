@@ -3,6 +3,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0 auto;
 }
@@ -27,7 +28,6 @@ nav .search-block {
   padding: 0.5rem 0.8rem;
   border: 1px solid #d9dde7;
   display: flex;
-
   align-items: center;
   border-radius: 4px;
 }
@@ -102,6 +102,7 @@ nav ul li:last-child {
     margin-left: 1.8rem;
   }
   nav {
+    flex-wrap: nowrap;
     padding: 1rem 1.5rem;
   }
   .nav-logo {
@@ -114,7 +115,6 @@ nav ul li:last-child {
     flex-basis: 8rem;
   }
 }
-
 @media (min-width: 1200px) {
   nav input {
     min-width: 30rem;
@@ -125,6 +125,13 @@ nav ul li:last-child {
 }
 
 @media (min-width: 1300px) {
+  .nav-container {
+    min-width: 100%;
+  }
+  nav {
+    padding: 1rem 1.5rem;
+  }
+
   .hero_book_form_block {
     margin-right: 10%;
   }
