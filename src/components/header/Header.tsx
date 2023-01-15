@@ -23,16 +23,20 @@ function Header() {
         </p>
       </div>
       <div className="social-icons">
-        <a target="_blank" href="https://www.facebook.com/">
+        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/">
           <FontAwesomeIcon icon={faFacebook} />
         </a>
-        <a target="_blank" href="https://twitter.com/i/flow/login">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://twitter.com/i/flow/login"
+        >
           <FontAwesomeIcon icon={faTwitter} />
         </a>
-        <a target="_blank" href="https://www.instagram.com/">
+        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
-        <a target="_blank" href="https://www.youtube.com/">
+        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/">
           <FontAwesomeIcon icon={faYoutube} />
         </a>
       </div>

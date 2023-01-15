@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import './AllRestaurantHomePage.css';
+import './RestaurantCard.css';
 
 interface List {
   name: string;
-  priceFOrOne: string;
+  priceForOne: string;
   rating: number;
   imageUrl: string;
 }
@@ -11,31 +11,21 @@ interface ChildComponentProps {
   items: List[];
 }
 
-function AllRestaurantHomePage(props: ChildComponentProps) {
+function RestaurantCard(props: ChildComponentProps) {
   return (
     <section className="all-restaurant">
       <div className="restau-container">
         <div className="restau-heading">
           <h2>
             All
-            <span>
-              {' '}
-              {props.items[0].name === 'Hotel Crown Plaza'
-                ? `Hotels`
-                : `Restaurants`}
-            </span>
+            <span> Restaurants</span>
           </h2>
-          <Link
-            className="show-more-link"
-            to={
-              props.items[0].name === 'Hotel Crown Plaza' ? '/hotel-rooms' : '#'
-            }
-          >
-            Show All(328)
+          <Link className="show-more-link" to="/restaurants">
+            Show All({props.items.length})
           </Link>
         </div>
         <div className="restaurant-list-wrapper">
-          {props.items.map((restaurant, index) => {
+          {props.items.slice(0, 6).map((restaurant, index) => {
             return (
               <div key={index} className="restaurant-card">
                 <img src={restaurant.imageUrl} alt="food" />
@@ -47,7 +37,7 @@ function AllRestaurantHomePage(props: ChildComponentProps) {
                 </div>
                 <div className="restaurant-meta">
                   <span>Tea Bevarages, North Ind...</span>
-                  <span>Rs.{restaurant.priceFOrOne} for one</span>
+                  <span>Rs.{restaurant.priceForOne} for one</span>
                 </div>
                 <div className="solid-line"></div>
                 <div className="card-footer">
@@ -66,4 +56,4 @@ function AllRestaurantHomePage(props: ChildComponentProps) {
   );
 }
 
-export default AllRestaurantHomePage;
+export default RestaurantCard;

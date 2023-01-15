@@ -116,13 +116,13 @@ section {
 
 @media (min-width: 1192px) {
   .restaurant-list-wrapper {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .all-restaurant .restau-container .restau-heading h2 {
     font-size: 1.8rem;
   }
 
   .restaurant-card {
-    min-height: 280px;
+    max-height: 680px;
   }
 }

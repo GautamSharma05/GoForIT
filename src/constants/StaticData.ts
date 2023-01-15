@@ -2,7 +2,7 @@ export const restaurantsList = [
   {
     id: 1,
     name: 'Burger King',
-    priceFOrOne: '200',
+    priceForOne: '200',
     rating: 3.8,
     imageUrl:
       'https://b.zmtcdn.com/data/pictures/chains/5/58725/8e48399337d34293900534be861e6938_o2_featured_v2.jpg',
@@ -10,7 +10,7 @@ export const restaurantsList = [
   {
     id: 2,
     name: 'Choka Dhaba',
-    priceFOrOne: '100',
+    priceForOne: '100',
     rating: 4.8,
     imageUrl:
       'https://b.zmtcdn.com/data/pictures/chains/5/58725/8e48399337d34293900534be861e6938_o2_featured_v2.jpg',
@@ -18,7 +18,7 @@ export const restaurantsList = [
   {
     id: 3,
     name: 'Rolls Mania',
-    priceFOrOne: '200',
+    priceForOne: '200',
     rating: 4.1,
     imageUrl:
       'https://b.zmtcdn.com/data/pictures/1/19121581/3afb1ad1e5b1ac9a10f4083ac1443e0f_o2_featured_v2.jpg',
@@ -26,7 +26,7 @@ export const restaurantsList = [
   {
     id: 4,
     name: 'Harishankar Veg Restaurant',
-    priceFOrOne: '200',
+    priceForOne: '200',
     rating: 3.8,
     imageUrl:
       'https://b.zmtcdn.com/data/pictures/chains/6/50036/c5e37d1690f8c195bcc9f58ae609a2dc_o2_featured_v2.jpg',
@@ -34,7 +34,7 @@ export const restaurantsList = [
   {
     id: 5,
     name: "La Pino's Pizza",
-    priceFOrOne: '200',
+    priceForOne: '200',
     rating: 3.8,
     imageUrl:
       'https://b.zmtcdn.com/data/pictures/chains/6/18613656/210f70f0baecddad033670d733634d07_o2_featured_v2.jpg',
@@ -42,10 +42,34 @@ export const restaurantsList = [
   {
     id: 6,
     name: 'Shawarma Brothers',
-    priceFOrOne: '200',
+    priceForOne: '200',
     rating: 3.8,
     imageUrl:
       'https://b.zmtcdn.com/data/pictures/chains/4/50714/89d579a1ec6d959162f44fe4cef4546f_o2_featured_v2.jpg',
+  },
+  {
+    id: 7,
+    name: 'Shawarma Brothers',
+    priceForOne: '200',
+    rating: 3.8,
+    imageUrl:
+      'https://b.zmtcdn.com/data/pictures/chains/4/50714/89d579a1ec6d959162f44fe4cef4546f_o2_featured_v2.jpg',
+  },
+  {
+    id: 8,
+    name: 'Hanuman Veg Restaurant',
+    priceForOne: '200',
+    rating: 3.8,
+    imageUrl:
+      'https://b.zmtcdn.com/data/pictures/chains/6/50036/c5e37d1690f8c195bcc9f58ae609a2dc_o2_featured_v2.jpg',
+  },
+  {
+    id: 9,
+    name: 'Harishankar Veg Restaurant',
+    priceForOne: '200',
+    rating: 3.8,
+    imageUrl:
+      'https://b.zmtcdn.com/data/pictures/chains/6/50036/c5e37d1690f8c195bcc9f58ae609a2dc_o2_featured_v2.jpg',
   },
 ];
 

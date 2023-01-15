@@ -1,6 +1,6 @@
+import HotelCard from '../../components/hotel-cards/HotelCard';
 import { allHotelsList } from '../../constants/StaticData';
 import './AllHotel.css';
-import HotelCard from './hotel-cards/HotelCard';
 
 function AllHotel() {
   return (

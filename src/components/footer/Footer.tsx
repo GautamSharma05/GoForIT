@@ -13,7 +13,7 @@ function Footer() {
     <footer className="footer">
       <div className="container-footer">
         <div className="row">
-          <div className="col-md-6 col-lg-3 mb-md-0 mb-4">
+          <div className="col-md-6 col-lg-3">
             <h2>
               <Link className="footer-heading" to="#">
                 Vacation Hotel
@@ -28,7 +28,7 @@ function Footer() {
             </Link>
           </div>
 
-          <div className="col-md-6 col-lg-3 mb-md-0 mb-4">
+          <div className="col-md-6 col-lg-3 ">
             <h2>
               <Link className="footer-heading" to="#">
                 Services
@@ -58,7 +58,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="col-md-6 col-lg-3 mb-md-0 mb-4">
+          <div className="col-md-6 col-lg-3 ">
             <h2>
               <Link className="footer-heading" to="#">
                 Tag Cloud
@@ -86,7 +86,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-md-6 col-lg-3 mb-md-0 mb-4">
+          <div className="col-md-6 col-lg-3 ">
             <h2>
               <Link className="footer-heading" to="#">
                 Subscribe
@@ -109,7 +109,7 @@ function Footer() {
               </div>
             </form>
           </div>
-          <div className="col-md-6 col-lg-3 mb-md-0 mb-4">
+          <div className="col-md-6 col-lg-3 ">
             <h2 className="mt-5">
               <Link className="footer-heading " to="#">
                 Follow Us
@@ -117,22 +117,40 @@ function Footer() {
             </h2>
             <ul className="social-icon-liststyled">
               <li>
-                <FontAwesomeIcon
-                  className="social-footer-link"
-                  icon={faTwitter}
-                />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://twitter.com/i/flow/login"
+                >
+                  <FontAwesomeIcon
+                    className="social-footer-link"
+                    icon={faTwitter}
+                  />
+                </a>
               </li>
               <li>
-                <FontAwesomeIcon
-                  className="social-footer-link"
-                  icon={faFacebook}
-                />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.facebook.com/"
+                >
+                  <FontAwesomeIcon
+                    className="social-footer-link"
+                    icon={faFacebook}
+                  />
+                </a>
               </li>
               <li>
-                <FontAwesomeIcon
-                  className="social-footer-link"
-                  icon={faInstagram}
-                />
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.instagram.com/"
+                >
+                  <FontAwesomeIcon
+                    className="social-footer-link"
+                    icon={faInstagram}
+                  />
+                </a>
               </li>
             </ul>
           </div>
@@ -146,7 +164,7 @@ function Footer() {
               <p>
                 Copyright ©
                 <script>document.write(new Date().getFullYear());</script>
-                2022 All Right Reserved
+                2023 All Right Reserved
               </p>
             </div>
           </div>
