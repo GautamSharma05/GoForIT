@@ -1,0 +1,128 @@
+.all-restaurant {
+  margin: 0.5rem;
+}
+
+.all-restaurant .restau-container .restau-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.all-restaurant .restau-container .restau-heading h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #000000;
+}
+.all-restaurant .restau-container .restau-heading h2 span {
+  color: #e83e8c;
+}
+
+.all-restaurant .restau-container .restau-heading .show-more-link {
+  font-size: 1rem;
+  color: #596172;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.restaurant-list-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.restaurant-card {
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  padding: 1.2rem;
+  max-height: 380px;
+  box-shadow: rgb(28 28 28 / 12%) 0px 0.4rem 1.8rem;
+}
+
+.restaurant-card img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.restaurant-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0.5rem;
+}
+.restaurant-meta span {
+  color: #596172;
+  font-size: 0.8rem;
+}
+
+.restaurant-title-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurant-title {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 24px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: start;
+  padding: 0 0.4rem;
+  font-weight: 500;
+}
+
+.card-rating-stars {
+  background-color: #ff5a5f;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 2px;
+}
+
+.solid-line {
+  height: 0.1rem;
+  background-color: rgb(232, 232, 232);
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.card-footer span {
+  font-size: 0.8rem;
+  color: #596172;
+}
+.card-footer img {
+  width: 30px;
+  height: 20px;
+}
+
+@media (min-width: 950px) {
+  .restaurant-list-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .restaurant-card {
+    min-height: 280px;
+  }
+}
+
+@media (min-width: 1192px) {
+  .restaurant-list-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .all-restaurant .restau-container .restau-heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .restaurant-card {
+    max-height: 680px;
+  }
+}
