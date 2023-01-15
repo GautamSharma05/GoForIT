@@ -5,6 +5,7 @@ interface List {
   name: string;
   priceForOne: string;
   rating: number;
+  tag: string;
   imageUrl: string;
 }
 interface ChildComponentProps {
@@ -28,7 +29,11 @@ function RestaurantCard(props: ChildComponentProps) {
           {props.items.slice(0, 6).map((restaurant, index) => {
             return (
               <div key={index} className="restaurant-card">
-                <img src={restaurant.imageUrl} alt="food" />
+                <img
+                  className="restaurant-img"
+                  src={restaurant.imageUrl}
+                  alt="food"
+                />
                 <div className="restaurant-title-div">
                   <span className="restaurant-title">{restaurant.name}</span>
                   <span className="card-rating-stars">
@@ -36,7 +41,7 @@ function RestaurantCard(props: ChildComponentProps) {
                   </span>
                 </div>
                 <div className="restaurant-meta">
-                  <span>Tea Bevarages, North Ind...</span>
+                  <span>{restaurant.tag}</span>
                   <span>Rs.{restaurant.priceForOne} for one</span>
                 </div>
                 <div className="solid-line"></div>
