@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/GoForIT/static/css/main.e7909ac5.css",
-    "main.js": "/GoForIT/static/js/main.996d9392.js",
+    "main.css": "/GoForIT/static/css/main.bf308994.css",
+    "main.js": "/GoForIT/static/js/main.c193b732.js",
     "static/js/787.603a9c7d.chunk.js": "/GoForIT/static/js/787.603a9c7d.chunk.js",
     "static/media/mobile-img.png": "/GoForIT/static/media/mobile-img.8624e62978c498bfa69d.png",
     "service-worker.js": "/GoForIT/service-worker.js",
     "index.html": "/GoForIT/index.html",
-    "main.e7909ac5.css.map": "/GoForIT/static/css/main.e7909ac5.css.map",
-    "main.996d9392.js.map": "/GoForIT/static/js/main.996d9392.js.map",
+    "main.bf308994.css.map": "/GoForIT/static/css/main.bf308994.css.map",
+    "main.c193b732.js.map": "/GoForIT/static/js/main.c193b732.js.map",
     "787.603a9c7d.chunk.js.map": "/GoForIT/static/js/787.603a9c7d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7909ac5.css",
-    "static/js/main.996d9392.js"
+    "static/css/main.bf308994.css",
+    "static/js/main.c193b732.js"
   ]
 }
