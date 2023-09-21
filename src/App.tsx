@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ReactGA from 'react-ga4';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Navbar from './components/navbar/Navbar';
@@ -11,6 +12,7 @@ import Login from './pages/login/Login';
 import Otp from './pages/login/OTP/Otp';
 import Service from './pages/service_page/Service';
 function App() {
+  ReactGA.initialize('G-T0LGEQNVBZ');
   return (
     <Router>
       <Header />
